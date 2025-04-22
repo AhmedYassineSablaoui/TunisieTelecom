@@ -1,0 +1,15 @@
+<!-- add_network_generation.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Network Generation</title>
+</head>
+<body>
+    <h1>Add Network Generation</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <!-- Render form fields as paragraphs -->
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

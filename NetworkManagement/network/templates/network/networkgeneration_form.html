@@ -1,0 +1,16 @@
+<!-- networkgeneration_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Network Generation</title>
+</head>
+<body>
+    <h1>Update Network Generation</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'network-generation-list' %}">Back to list</a>
+</body>
+</html>
